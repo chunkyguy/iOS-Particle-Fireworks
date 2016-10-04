@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F4663011DA44F3600F0EEF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4663001DA44F3600F0EEF2 /* LaunchScreen.storyboard */; };
+		1F4663041DA4508900F0EEF2 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4663031DA4508900F0EEF2 /* UIView+AutoLayout.m */; };
 		982E8616146DF6AF00ADC1BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982E8615146DF6AF00ADC1BB /* QuartzCore.framework */; };
 		988F9407146DD3B900C11DF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988F9406146DD3B800C11DF8 /* UIKit.framework */; };
 		988F9409146DD3B900C11DF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988F9408146DD3B900C11DF8 /* Foundation.framework */; };
@@ -15,12 +17,14 @@
 		988F9413146DD3B900C11DF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 988F9412146DD3B900C11DF8 /* main.m */; };
 		988F9417146DD3B900C11DF8 /* TWFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 988F9416146DD3B900C11DF8 /* TWFAppDelegate.m */; };
 		988F941A146DD3B900C11DF8 /* TWFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 988F9419146DD3B900C11DF8 /* TWFViewController.m */; };
-		988F941D146DD3B900C11DF8 /* TWFViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988F941B146DD3B900C11DF8 /* TWFViewController_iPhone.xib */; };
 		988F9420146DD3B900C11DF8 /* TWFViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988F941E146DD3B900C11DF8 /* TWFViewController_iPad.xib */; };
 		DA99AB3A14719D64002E1EF2 /* tspark.png in Resources */ = {isa = PBXBuildFile; fileRef = DA99AB3914719D64002E1EF2 /* tspark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F4663001DA44F3600F0EEF2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F4663021DA4508900F0EEF2 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		1F4663031DA4508900F0EEF2 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		982E8615146DF6AF00ADC1BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		988F9402146DD3B800C11DF8 /* Fireworks-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fireworks-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		988F9406146DD3B800C11DF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -34,7 +38,6 @@
 		988F9416146DD3B900C11DF8 /* TWFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWFAppDelegate.m; sourceTree = "<group>"; };
 		988F9418146DD3B900C11DF8 /* TWFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWFViewController.h; sourceTree = "<group>"; };
 		988F9419146DD3B900C11DF8 /* TWFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWFViewController.m; sourceTree = "<group>"; };
-		988F941C146DD3B900C11DF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TWFViewController_iPhone.xib; sourceTree = "<group>"; };
 		988F941F146DD3B900C11DF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TWFViewController_iPad.xib; sourceTree = "<group>"; };
 		DA99AB3914719D64002E1EF2 /* tspark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tspark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,8 +92,10 @@
 				988F9416146DD3B900C11DF8 /* TWFAppDelegate.m */,
 				988F9418146DD3B900C11DF8 /* TWFViewController.h */,
 				988F9419146DD3B900C11DF8 /* TWFViewController.m */,
-				988F941B146DD3B900C11DF8 /* TWFViewController_iPhone.xib */,
+				1F4663021DA4508900F0EEF2 /* UIView+AutoLayout.h */,
+				1F4663031DA4508900F0EEF2 /* UIView+AutoLayout.m */,
 				988F941E146DD3B900C11DF8 /* TWFViewController_iPad.xib */,
+				1F4663001DA44F3600F0EEF2 /* LaunchScreen.storyboard */,
 				988F940D146DD3B900C11DF8 /* Supporting Files */,
 			);
 			path = "Fireworks-iOS";
@@ -159,7 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				988F9411146DD3B900C11DF8 /* InfoPlist.strings in Resources */,
-				988F941D146DD3B900C11DF8 /* TWFViewController_iPhone.xib in Resources */,
+				1F4663011DA44F3600F0EEF2 /* LaunchScreen.storyboard in Resources */,
 				988F9420146DD3B900C11DF8 /* TWFViewController_iPad.xib in Resources */,
 				DA99AB3A14719D64002E1EF2 /* tspark.png in Resources */,
 			);
@@ -173,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				988F9413146DD3B900C11DF8 /* main.m in Sources */,
+				1F4663041DA4508900F0EEF2 /* UIView+AutoLayout.m in Sources */,
 				988F9417146DD3B900C11DF8 /* TWFAppDelegate.m in Sources */,
 				988F941A146DD3B900C11DF8 /* TWFViewController.m in Sources */,
 			);
@@ -187,14 +193,6 @@
 				988F9410146DD3B900C11DF8 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		988F941B146DD3B900C11DF8 /* TWFViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				988F941C146DD3B900C11DF8 /* en */,
-			);
-			name = TWFViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
 		988F941E146DD3B900C11DF8 /* TWFViewController_iPad.xib */ = {
@@ -261,6 +259,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fireworks-iOS/Fireworks-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Fireworks-iOS/Fireworks-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -272,6 +271,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fireworks-iOS/Fireworks-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Fireworks-iOS/Fireworks-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

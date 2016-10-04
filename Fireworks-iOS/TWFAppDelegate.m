@@ -18,9 +18,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setBackgroundColor:[UIColor greenColor]];
+    
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[TWFViewController alloc] initWithNibName:@"TWFViewController_iPhone" bundle:nil];
+        self.viewController = [[TWFViewController alloc] initWithNibName:nil bundle:nil];
     } else {
         self.viewController = [[TWFViewController alloc] initWithNibName:@"TWFViewController_iPad" bundle:nil];
     }

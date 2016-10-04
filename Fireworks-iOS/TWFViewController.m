@@ -7,6 +7,7 @@
 //
 
 #import "TWFViewController.h"
+#import "UIView+AutoLayout.h"
 
 @implementation TWFViewController
 
@@ -16,17 +17,17 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
-    self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    
+
     backView = [[UIView alloc] initWithFrame:self.view.bounds];
     backView.backgroundColor = self.view.backgroundColor;
-    backView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:backView];
-    
+    [self.view constraintSubview:backView];
+
+
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] 
                                           initWithTarget:self action:@selector(tapGesture:)]; 
     [self.view addGestureRecognizer:tapGesture];
-    
+
     //Create the root layer
 	CALayer *rootLayer = [CALayer layer];
     rootLayer.bounds = self.view.bounds; //CGRectMake(0, 0, 640, 480);
@@ -37,7 +38,6 @@
     //Set the view's layer to the base layer
     [rootLayer addSublayer:mortor];
     [backView.layer addSublayer:rootLayer];
-
 }
 
 - (void)tapGesture:(UITapGestureRecognizer*)gesture
