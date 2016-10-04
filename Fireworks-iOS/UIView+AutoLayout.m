@@ -11,7 +11,8 @@
 @implementation UIView (AutoLayout)
 
 - (void) constraintSubview: (UIView *)subview
-                withInsets: (UIEdgeInsets)insets {
+                withInsets: (UIEdgeInsets)insets
+{
 
     NSAssert(subview.superview != nil, @"subview not added to the receiver");
 
@@ -30,7 +31,8 @@
                                views:NSDictionaryOfVariableBindings(subview)]];
 }
 
-- (void) constraintSubview: (UIView *)subview {
+- (void) constraintSubview: (UIView *)subview
+{
     [self constraintSubview:subview withInsets:UIEdgeInsetsZero];
 }
 

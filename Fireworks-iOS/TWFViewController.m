@@ -40,6 +40,12 @@
     [backView.layer addSublayer:rootLayer];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self addParticlesWithPoint:CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMaxY(self.view.bounds))];
+}
+
 - (void)tapGesture:(UITapGestureRecognizer*)gesture
 {
     [self addParticlesWithPoint:[gesture locationInView:backView]];
