@@ -16,10 +16,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor blackColor];
 
-    backView = [[UIView alloc] initWithFrame:self.view.bounds];
-    backView.backgroundColor = self.view.backgroundColor;
+    UIColor *backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = backgroundColor;
+
+    backView = [[UIView alloc] init];
+    backView.backgroundColor = backgroundColor;
     [self.view addSubview:backView];
     [self.view constraintSubview:backView];
 
@@ -28,22 +30,33 @@
                                           initWithTarget:self action:@selector(tapGesture:)]; 
     [self.view addGestureRecognizer:tapGesture];
 
-    //Create the root layer
-	CALayer *rootLayer = [CALayer layer];
-    rootLayer.bounds = self.view.bounds; //CGRectMake(0, 0, 640, 480);
-    rootLayer.backgroundColor = [UIColor blackColor].CGColor;
-    
-    mortor = [CAEmitterLayer layer];
-    
-    //Set the view's layer to the base layer
-    [rootLayer addSublayer:mortor];
-    [backView.layer addSublayer:rootLayer];
+    [self addParticles];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     [self addParticlesWithPoint:CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMaxY(self.view.bounds))];
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    backView.layer.frame = self.view.frame;
+}
+
+- (void)addParticles
+{
+    //Create the root layer
+    CALayer *rootLayer = [CALayer layer];
+    rootLayer.bounds = self.view.bounds; //CGRectMake(0, 0, 640, 480);
+    rootLayer.backgroundColor = [UIColor blackColor].CGColor;
+
+    mortor = [CAEmitterLayer layer];
+
+    //Set the view's layer to the base layer
+    [rootLayer addSublayer:mortor];
+    [backView.layer addSublayer:rootLayer];
 }
 
 - (void)tapGesture:(UITapGestureRecognizer*)gesture

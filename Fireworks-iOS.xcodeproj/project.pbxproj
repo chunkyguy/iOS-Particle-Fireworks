@@ -140,6 +140,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				TargetAttributes = {
+					988F9401146DD3B800C11DF8 = {
+						DevelopmentTeam = FAAALUHC5H;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 988F93FC146DD3B800C11DF8 /* Build configuration list for PBXProject "Fireworks-iOS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -256,10 +262,13 @@
 		988F9424146DD3B900C11DF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FAAALUHC5H;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fireworks-iOS/Fireworks-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Fireworks-iOS/Fireworks-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.picnic.ParticleSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -268,10 +277,13 @@
 		988F9425146DD3B900C11DF8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FAAALUHC5H;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fireworks-iOS/Fireworks-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Fireworks-iOS/Fireworks-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.picnic.ParticleSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
